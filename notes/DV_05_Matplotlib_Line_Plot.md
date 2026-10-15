@@ -136,7 +136,7 @@ df_can.index.name = None                    # (선택) index 이름 제거
 ```
 - 💡 **왜 Country를 index로?** → `df.loc['Haiti', ...]` 처럼 **국가 이름으로 바로 행을 찾을 수 있고**, plot 시 국가명이 범례에 자동으로 들어감.
 - 💡 데이터 구조: **행 = 국가(Country)**, **열 = Continent, Region, DevName, 1980~2013(연도), Total**.
-- 📘 노트북 주석: “Recall that we created a **Total** column” — 국가별 누적 이민자 수(Total) 열이 데이터에 있다고 가정하고 사용 (이 노트북에는 Total 생성 셀이 없음).
+- 📘 노트북 주석: “Recall that we created a **Total** column” — 국가별 누적 이민자 수(**Total**) 열이 **CSV에 이미 포함**되어 있음 (DV_06에서 set_index 후 열 38개 = 메타 3 + 연도 34 + Total 1로 확인).
 
 ## B-2. Matplotlib 불러오기 (셀 14~21)
 ```python
